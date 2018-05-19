@@ -1,9 +1,10 @@
 namespace :test do
         desc "ruby_test"
-          task :ruby_test do
-            system(ruby_test.rb)
-          end
+        task :ruby_test do
+        	system(ruby_test.rb)
+        end
         desc "default task"
-        	task :default => :ruby_test
-        	end  
+        task :default do
+           	system(ruby_test.rb)
+        end  
  end
