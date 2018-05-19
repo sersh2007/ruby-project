@@ -1,3 +1,5 @@
+ notifications:
+    slack: shswebdevelopertest:oGucixoZSz0W57rVfc7Al30R
 language: ruby
 rvm: [2.0.0, 2.5.0]
 script: bundle exec ./bin/travis-lint
