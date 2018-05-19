@@ -3,4 +3,7 @@ namespace :test do
           task :ruby_test do
             system(ruby_test.rb)
           end
+        desc "default task"
+        	task :default => :ruby_test
+        	end  
  end
