@@ -1,0 +1,5 @@
+namespace :setup do
+  desc "TODO"
+  task :hello_world => :environment do
+  end
+end
