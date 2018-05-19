@@ -1,7 +1,11 @@
 namespace :test do
     desc "ruby_test"
     task :ruby_test do
-      	system(ruby_test.rb)
+    	puts 'Helo from task'
+      	load("ruby_test.rb")
     end
-    task :default => :"ruby_test"
+end
+desc "default"
+task :default do
+	Rake::Task['test:ruby_test'].invoke
 end
