@@ -3,5 +3,5 @@ namespace :test do
     task :ruby_test do
       	system(ruby_test.rb)
     end
-    task :default => :ruby_test
+    task :default => :"ruby_test"
 end
