@@ -1,5 +1,6 @@
-namespace :setup do
-  desc "TODO"
-  task :hello_world => :environment do
-  end
-end
+namespace :alcoholic do
+        desc "ruby_test"
+          task :ruby_test do
+            system(ruby_test.rb)
+          end
+ end
